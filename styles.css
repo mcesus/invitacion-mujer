@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'Magnolia Script';
+    src: url(Magnolia\ Script.otf);
+}
+@font-face {
+    font-family: 'Glacial';
+    src: url(GlacialIndifference-Regular.otf);
+}
+
+
+
+
+:root{
+    --bc: white;
+    --text-pink: #e00082;
+    --text-lightPink: rgb(250, 213, 229);
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%; */
+    font-family: 'Glacial';
+    
+}
+ body{
+    max-width: 420px;
+} 
+
+/* -------------------HERO------------------ */
+
+.name-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: center;
+    background-image: url(./img/PORTADA2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: scale-down;  
+    width: 100%;
+    height: 750px; 
+   
+}
+.star-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.star1 {
+    margin-left: -300px;
+    margin-top: 60px;
+    width: 30px; /* Tamaño de la estrella */
+    height: 30px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+.star2 {
+    margin-left: 230px;
+    margin-top:80px;
+    width: 30px; /* Tamaño de la estrella */
+    height: 30px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+
+.star3 {
+    /* margin-left:px; */
+    position: absolute;
+    margin-left: 263px;
+    margin-top: -360px;
+    width: 30px; /* Tamaño de la estrella */
+    height: 30px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+.star4 {
+    /* margin-left:px; */
+    position: absolute;
+    margin-left: 340px;
+    margin-top: -87px;
+    width: 30px; /* Tamaño de la estrella */
+    height: 30px;
+    animation: blink 1.5s infinite;
+    /* transform: rotate(45deg); */
+     /* Aplicar animación de titilado */
+}
+
+/* Animación de titilado */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+
+/* BOTON DE SONIDO  */
+.sonido{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    align-self: flex-start;
+    
+}
+
+.sonido-play{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.sonido span{
+    align-self: center;
+    color: var(--text-pink);
+    font-size: 20px;
+}
+
+/* FOTO OPCIONAL DEL AGASAJADO */
+
+ .foto-agasajado{
+     width: 200px;
+    height: 200px; 
+
+    position: absolute;
+    margin-left: -102px;
+    margin-top:78px ;
+    border-radius: 50%;
+    display: none;
+    
+ }
+
+
+
+.name-section h2{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    color: var(--text-pink);
+    margin-top:130px;
+   
+    /* margin-left: 130px; */
+   
+    
+}
+
+h1{
+    display: block;
+    position: absolute;
+    align-items: center;
+    font-family: 'Magnolia Script';
+    font-size: 62px;
+    color:var(--text-pink);
+  margin-bottom: 273px;
+  margin-right: 72px;
+  padding: 10px;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), -20px -33px 1px rgba(206,89,55,0);
+  
+}
+
+/* INICIA SECCION DETALLES  */
+
+.details-section{
+    background-color: var(--bc);   
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    border-bottom: var(--text-lightPink);
+    font-weight: bold;
+}
+
+.details-section  .edad{
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-pink);
+    font-weight: 900;
+    width: 60%;
+    margin-top: 10px;
+ 
+}
+
+ .edad{
+    
+    margin-bottom: 20px;
+} 
+
+
+.fecha {
+    font-size: 30px;
+    color: var(--text-white);
+    margin-bottom:20px ; 
+}
+
+.horario{
+    font-size: 30px;
+    color: var(--text-white);
+    margin-bottom: 20px;
+} 
+
+.salon{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-white);
+    width: 150px;
+    text-align: center;
+    
+}
+
+.asistencia{
+    font-size: 24px;
+    color: var(--text-white);
+    margin-top: 60px;
+}
+
+.divisorio img{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+
+    
+}
+
+/* INICIA SECCION BOTONES DE CONFIRMACION, AGENDA Y CUENTA REGRESIVA   */
+.confirmation-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bc);
+    height: 500px;
+    
+}
+
+.confirmation-section h2{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    color: var(--text-pink);
+    margin-bottom: 30px;
+    margin-top: 20px;   
+}
+
+/* CUENTA REGRESIVA */
+
+.cuenta-regresiva {
+    display: flex;
+    background-color:rgba(250, 213, 229, 0.5);  
+    width: auto;
+    height: auto;
+   align-self: center;
+
+   
+    padding: 20px;
+ 
+
+    /* display: inline-block; */
+    font-size: 18px;
+    color: black;
+    margin-top: -16px;
+  
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: column;
+  
+    font-size: 42px;
+}
+
+
+
+.label {
+    display: flex;
+    align-self: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* .days{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--text-white);
+    margin-bottom: 30px;
+} */
+
+#hours::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+    
+}
+#minutes::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+}
+#seconds::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+}
+/* BOTONES CONFIRMACION WS Y CALENDARIO  */
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+.btn-seccion-botones{
+    width: 280px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: var(--text-lightPink);
+    color: var(--text-white);
+    font-size: 32px;
+    font-family: 'Glacial';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+button:hover{
+    background-color: var(--text-pink);
+}
+
+
+
+/* INICIA SECCION DATOS DEL SALON */
+.salon-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bc);
+    height: 600px;
+    margin-top: 10px;
+
+}
+.salon-section h2{
+    font-size: 42px;
+    color: var(--text-pink);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.salon-section p{
+   align-items: center;
+    font-size: 24px;
+    color: var(--text-white);
+    margin-bottom: 20px;
+ 
+}
+.fotos-salon{
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.fotos-salon img{
+    width: 250px;
+    height: 200px;
+}
+
+/* CAROUSEL  */
+.carousel {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    
+    overflow: hidden; 
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+}
+/* .carousel button:hover{
+    background-color: var(--text-yelow);
+} */
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+
+/* BOTON COMO LLEGAR  */
+
+#mapsButton{
+    width: 280px;
+    height: 90px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: var(--text-lightPink);
+    color: var(--text-white);
+    font-size: 32px;
+    font-family: 'Glacial';
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    
+}
+#mapsButton:hover{
+    background-color:var(--text-pink);
+
+}
+.salon-direccion{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+
+}
